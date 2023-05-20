@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>code quiz: do you have what it takes?</title>
+  </head>
+  <body>
+    <!-- homepage -->
+    <div class="home-container" id="home-container">
+      <h1>Codial Pirsuit</h1>
+      <p>
+        Do you know the coding basics? We'll find out. Oh and don't mess up because if you do time will run out.
+        <span style="font-weight: bolder">Ready?</span>
+      </p>
+      <p>I believe in you.</p>
+      <div class="start-btn-container">
+        <button class="start-btn is-primary" id="start-btn" type="button">
+          Let's Get it
+        </button>
+      </div>
+    </div>
+    <!-- timer and quiz -->
+    <div class="quiz-container" style="text-align: right">
+      <p class="time"></p>
+      <div class="scorecard"></div>
+      <div id="main"></div>
+      <button class="answer-btn" id="answer1"></button>
+      <button class="answer-btn" id="answer2"></button>
+      <button class="answer-btn" id="answer3"></button>
+      <button class="answer-btn" id="answer4"></button>
+      <div class="feedback"></div>
+      <button id="next-btn">next</button>
+    </div>
+    <!-- game over / submit score -->
+    <section class="scorePage">
+      <div class="highscore-container"></div>
+      <form id="highscore-form" method="post">
+        <input type="input" id="submit-initials" placeholder="your initials" />
+        <button type="button" value="submit" id="saveScoreBtn">
+          save score
+        </button>
+      </form>
+      <button type="button" id="try-again">try again</button>
+      <button type="button" id="highscoreBtn">view highscores</button>
+    </section>
+
+    <section>
+      <ul id="scoreBoard"></ul>
+      <button type="button" id="refresh">try again</button>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
